@@ -1,0 +1,747 @@
+/_
+html{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;}
+
+body{font-family: 'Sawarabi Mincho', serif;
+     line-height: 1.7;
+     color: #432;
+}
+
+ul,li {list-style: none;}
+
+a{text-decoration: none;}
+
+/*画像が親要素よりも大きくなる事を防ぐ*/
+img{
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------------
+fadeUpモーション
+------------------------------------------------------------------*/
+
+.fade{
+  margin-top: 80vh;
+  text-align: center;
+  opacity : 0;
+  transition: opacity 3s;
+}
+ 
+.fade.view{
+  opacity: 1;
+}
+/*------------------------------------------------------------------
+ヘッダーのスタイル
+------------------------------------------------------------------*/
+.page-header{
+  justify-content: space-between;
+  display: flex;
+}
+.wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;;
+}
+
+.header-left img{
+  width: 200px;
+}
+
+.header-right-sp{
+  text-align: center;
+}
+.header-right-sp ul{
+  font-size: 1.25rem;
+  display: flex;
+  margin: 16px 0;
+}
+.header-right-sp li{
+  margin-left: 36px;
+}
+.header-right-sp li a{
+  color: #432;
+}
+.header-right-sp li a:hover{
+  font-size: 1.50rem;
+  font-weight: bolder;
+  color: brown;
+}
+/*------------------------------------------------------------------ 
+メインのスタイル
+------------------------------------------------------------------*/
+.gif{display: none;}
+
+.z-index_test {
+    height: 600px;             /* 高さ指定 */
+    width:  80%;  
+    padding-top: 60px;            /* 幅指定 */
+    position:  relative;        /* 位置指定 */
+    z-index: 5;                /* 重なり順指定 */
+}
+.z-index_test2 {
+    height: 500px;             /* 高さ指定 */
+    width:400px;              /* 幅指定 */
+    text-align: center;
+    position:  absolute;        /* 位置指定 */
+    top: 160px;                  /* 位置指定 */
+    left: 10%;                /* 位置指定 */
+    z-index: 6; /* 重なり順指定 */
+    opacity: .8;
+}
+
+
+.highlight{
+    float:left;
+    margin:0 8px;
+    width: 500px;
+    height: 500px;
+    padding:auto;
+
+    
+}
+
+.highlight p{
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+.page-title{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.button{
+    font-size: 1.375rem;
+    background:brown;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button hover{background: #0090aa;}
+
+/*------------------------------------------------------------------ 
+ NEWSの部分
+
+------------------------------------------------------------------*/
+
+
+.news {
+  margin: 80px auto 0;
+  padding: 50px 0;
+  background: #FFF7EA;
+}
+
+
+.inner {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 65px 0 100px;
+}
+
+
+.sub_ttl {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ここからがニュース記事のCSS */
+
+.news_list {
+  margin: 0 5% ;
+}
+
+.news_list_item {
+  padding: 25px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.news_list_item:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+.news_list_item a {
+ position: relative;
+ display: flex;
+ padding-right: 30px;
+}
+
+.news_list_date {
+  font-size: 15px;
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.news_item {
+  background: #F6C6A2;
+  border-radius: 14px;
+  width: 6em;
+  /* 親要素の文字サイズを基準 */
+  text-align: center;
+  margin-left: 20px;
+}
+
+.arrow {
+  width: 25px;
+  height: 1px;
+  background: #707070;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.arrow::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 1px;
+  background: #707070;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 0px;
+  bottom: 2px;
+}
+
+
+/*------------------------------------------------------------------ 
+コンテンツ
+------------------------------------------------------------------*/
+
+
+.flexcard{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.flexcard h2{
+  background-color:brown;
+  opacity: .9;
+  color: #fff;
+  text-align: center;
+background-repeat:no-repeat;
+background-position:center bottom;
+background-size:220px 28px;
+}
+
+.flexcard section{
+  flex:0 0 auto;
+  box-shadow:0 0 10px 0 goldenrod;
+  padding:20px 20px 40px;
+  width:40%;
+  margin:40px auto;
+}
+
+
+.flexcard section img{
+  width: 100%;
+}
+
+.flexcard section a{
+  display: inline-block; 
+  margin-top: 20px;
+  color: red;}
+
+
+h1,h2{margin: 0;
+ font-weight: normal;}
+
+p{margin: 0;}
+
+img{vertical-align: bottom;}
+
+.container{ margin: 0 16px;}
+
+
+
+
+/*------------------------------------------------------------------ 
+メニューのページ
+------------------------------------------------------------------*/
+
+#menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 60px 0px;
+  text-align: center;
+}
+#menu li {
+  color: white;
+  height: 80px;
+  line-height: 80px;
+}
+.li1 {
+  background-color: #ffc562;
+}
+.li2 {
+  background-color: #a0c3f7;
+}
+.li3 {
+  background-color: #ff8db3;
+}
+.li4 {
+  background-color: #88e7ce;
+}
+
+.flex-list {
+  display: flex;
+}
+.flex-list li {
+  flex: auto;
+}
+
+/*------------------------------------------------------------------ 
+ アクセスのページ
+------------------------------------------------------------------*/
+
+.map{
+  margin: 20px auto;
+}
+
+#map h2{
+        margin: 0 auto;
+        font-size: 24px;
+        text-align: center;
+      }
+
+table{border:solid 6px goldenrod;
+      border-collapse: collapse;/*線の単線化collapse*/
+      width:100%;/*tableを広げる＝divの幅と同じ割合になる*/
+      margin:20px auto;
+      max-width: 990px;}
+
+
+th,td{
+  border: solid 4px goldenrod;
+}
+
+th{
+  background-color:brown;
+  color: #ffffff;
+  width: 20%
+}
+
+td{padding: 0 5px;}
+
+tr:nth-child(odd/*even,2n+1でもおっけ*/){background:wheat;}
+/*表の編集タグ終了*/
+
+iframe {
+  width: 100%;
+        }
+
+
+/*------------------------------------------------------------------ 
+お問い合わせのページ
+------------------------------------------------------------------*/
+div#contents{
+    padding: 2%;
+}
+
+div#contents section#contact h2{
+    margin: 0 0 35px 5px;
+    padding: 16px;
+}
+
+div#contents section#contact p{
+    margin: 0 0 15px 5px;
+    padding-left: 16px;
+}
+
+.contact_form{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: none;
+    background-color:#fff;
+}
+.contact_form dt,
+.contact_form dl{
+    padding: 10px 20px;
+}
+.contact_form dt,{
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    background-color:#fff;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.contact_form dd,{
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom:  1px solid #ccc;
+}
+
+.inquiry_select{border:1px brown solid;}
+
+.contact_form dd textarea{
+    border:1px brown solid;
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+.contact_form .w300{
+    border:1px brown solid;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+}
+.contact_form .w70{
+    border:1px brown solid;
+    font-size: 12px;
+    width: 55px;
+    height: 24px;
+}
+.contact_form .bdchange{
+    border-bottom: none;
+}
+p.submit_btn{
+    text-align: center;
+    padding: 25px 0;
+}
+p.submit_btn input{
+    background-color: brown;
+    color: #fff;
+    border:3px goldenrod solid;
+    border-radius: 10px;
+    padding: 8px 4px;
+    font-size: large;
+    width: 240px;
+}
+p.submit_btn input:hover{
+  color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------
+フッターのスタイル
+------------------------------------------------------------------*/
+
+  .footer {
+    display:flex; 
+    justify-content:space-between;/*両端に配置*/
+    position: relative;
+    background-color:brown;
+    color:#fff;
+    padding: 2%;
+    width: 100%;
+    align-items: center;
+  
+  }
+
+  .footer-left{
+    float: left;
+    font-size:16px;
+  }
+
+  .footer-left a{
+        text-decoration:none;
+        color:#fff;
+    }
+  
+  .footer-right{
+    float:right;  
+    position:absolute;  /*ヘッダーの位置を固定*/
+    bottom:2%;  /*ヘッダーの位置を固定*/
+    right:0; /*ヘッダーの位置を左固定（左０）*/
+  }
+
+.footer-right {
+    float: right;
+}
+.steamWrap.footer-right img{
+    width:30%;
+    float: right;
+    bottom: 0;
+    right: 0;
+}
+
+  .adress {
+    background-color:brown;
+    opacity: .8;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 17px;
+    
+  }
+  
+.copyright{
+    background-color:brown;
+    opacity: .9;
+    text-align: center;
+    margin: 0 auto;
+    color:#fff;
+}
+
+/*P C,大型タブレット向け*/
+
+@media only screen and (min-width:769px){
+  
+     
+.z-index_test {
+    height: 600px;             /* 高さ指定 */
+    width:  80%;              /* 幅指定 */
+    
+    position:  relative;        /* 位置指定 */
+    z-index: 3;                /* 重なり順指定 */
+}
+.z-index_test2 {
+    height:  600px;             /* 高さ指定 */
+    width:  50%;              /* 幅指定 */
+    
+    position:  absolute;        /* 位置指定 */
+    top: 160px;                  /* 位置指定 */
+    left: 50%;                /* 位置指定 */
+    z-index: 100;               /* 重なり順指定 */
+}
+
+
+  
+
+    .contact_form {
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: none;
+    }    
+    .contact_form dt,.contact_form dd{
+        padding: 20px;
+    }
+    .contact_form dt{
+        font-size: 12px;
+        clear: both;
+        float: left;
+        width: 150px;
+        border-top:1px solid #fff;
+    }
+    .contact_form dd{
+        padding-left: 210px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #fff;
+    }
+    .contact_form .w300{
+        width: 300px;
+        height: 24px;
+    }
+    .contact_form  .w70{
+        width: 70px;
+        height: 24px;
+    }
+    .contact_form  .bdchange{
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+
+
+/*湯気*/
+@keyframes steam01 {
+  0% {
+    bottom: -600px;
+    filter: blur(16px);
+    transform: rotateY(0deg);
+    transform: scale(0.6, 1);
+    opacity: 0
+  }
+  11% { opacity: 0.1 }
+  33% {
+    transform: rotateY(40deg);
+    transform: scale(1, 1.4);
+    opacity: 0.5
+  }
+  66% {
+    transform: rotateY(10deg);
+    transform: scaleY(1.8, 1);
+    opacity: 0.4
+  }
+  100% {
+    bottom: 0;
+    filter: blur(20px);
+    transform: rotateY(60deg);
+    transform: scaleY(2, 1.8);
+    opacity: 0
+  }
+}
+@keyframes steam02 {
+  0% {
+    bottom: -400px;
+    filter: blur(16px);
+    transform: rotateY(0deg);
+    transform: scale(0.6, 0.6);
+    opacity: 0
+  }
+  11% { opacity: 0.1 }
+  33% {
+    transform: rotateY(40deg);
+    transform: scale(0.8, 1);
+    opacity: 0.4
+  }
+  66% {
+    transform: rotateY(2deg);
+    transform: scaleY(1, 1.2)
+  }
+  100% {
+    bottom: 0;
+    filter: blur(20px);
+    transform: rotateY(50deg);
+    transform: scaleY(1.2, 1.4);
+    opacity: 0
+  }
+}
+.steamWrap {
+  width: 740px;
+  margin: 0 auto;
+}
+.steamBox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden
+}
+.steamBox > img {
+  width: 100%;
+  display: block
+}
+.steam01 {
+  position: absolute;
+  right: 0;
+  animation: steam01 10s infinite linear;
+  opacity: 0
+}
+.steam02 {
+  position: absolute;
+  left: 0;
+  animation: steam02 14s infinite linear;
+  opacity: 0
+}
+.steam03 {
+  margin: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  animation: steam02 12s infinite linear;
+  animation-delay: 6s;
+  opacity: 0
+}
+.steam01 img, .steam03 img {
+  width: 532px;
+  height: 800px
+}
+.steam02 img {
+  width: 399px;
+  height: 600px
+}
+
+@keyframes steam01 {
+  0% {
+    bottom: -600px;
+    filter: blur(16px);
+    transform: rotateY(0deg);
+    transform: scale(0.6, 1);
+    opacity: 0
+  }
+  11% { opacity: 0.1 }
+  33% {
+    transform: rotateY(40deg);
+    transform: scale(1, 1.4);
+    opacity: 0.5
+  }
+  66% {
+    transform: rotateY(10deg);
+    transform: scaleY(1.8, 1);
+    opacity: 0.4
+  }
+  100% {
+    bottom: 0;
+    filter: blur(20px);
+    transform: rotateY(60deg);
+    transform: scaleY(2, 1.8);
+    opacity: 0
+  }
+}
+
+/*スクロールバー*/
+/*=== 9-1-2 丸が動いてスクロールを促す ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown2{
+  /*描画位置※位置は適宜調整してください*/
+position:fixed;
+bottom:32px;
+right:3%;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown2 span{
+  /*描画位置*/
+position: absolute;
+left:10px;
+bottom:10px;
+  /*テキストの形状*/
+color:black;
+font-size: 0.7rem;
+letter-spacing: 0.05em;
+/*縦書き設定*/
+-ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 丸の描写 */
+.scrolldown2:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom:0;
+  left:-4px;
+  /*丸の形状*/
+width:10px;
+height:10px;
+border-radius: 50%;
+background:brown;
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+animation:
+  circlemove 1.6s ease-in-out infinite,
+  cirlemovehide 1.6s ease-out infinite;
+}
+
+/*下からの距離が変化して丸の全体が上から下に動く*/
+@keyframes circlemove{
+    0%{bottom:45px;}
+   100%{bottom:-5px;}
+}
+
+/*上から下にかけて丸が透過→不透明→透過する*/
+@keyframes cirlemovehide{
+    0%{opacity:0}
+   50%{opacity:1;}
+  80%{opacity:0.9;}
+100%{opacity:0;}
+}
+
+/* 線の描写 */
+.scrolldown2:after{
+content:"";
+  /*描画位置*/
+position: absolute;
+bottom:0;
+left:0;
+  /*線の形状*/
+width:2px;
+height: 50px;
+background:black;
+}
