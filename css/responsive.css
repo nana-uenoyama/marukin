@@ -165,7 +165,7 @@ table{
 @media screen and (max-width: 769px) {
 
 .home{
-  sdisplay: none
+  display: none
 }
 .gif{
   display: block;
